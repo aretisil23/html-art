@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: black;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px
+    }
+    .sq1{
+      background-color: #E72F24;
+    }
+    .white-sq2{
+      background-color: white;
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+    .white-sq3{
+      background-color: white;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .white-sq4{
+      background-color: white;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .sq5{
+      background-color: #004592;
+    }
+    .white-sq6{
+      background-color: white;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+    .white-sq7{
+      background-color: white;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .sq8{
+      background-color: #F9D01E;
+    }
+    .sq9{
+      background-color: #232629;
+    }
+
+
+
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="sq1"></div>
+    <div class="white-sq2"></div>
+    <div class="white-sq3"></div>
+    <div class="white-sq4"></div>
+    <div class="sq5"></div>
+    <div class="white-sq6"></div>
+    <div class="white-sq7"></div>
+    <div class="sq8"></div>
+    <div class="sq9"></div>
+
+  </div>
+</body>
+
+</html>
